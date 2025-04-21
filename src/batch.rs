@@ -4,14 +4,7 @@ use qoe_core::{
     playback::engine::run_simulation,
     metrics::qoe::evaluate_qoe,
 };
-
-#[derive(Serialize, Clone, Debug)]
-pub struct ScoreRecord {
-    pub abr: String,
-    pub score: f32,
-    pub average_bitrate: f32,
-    pub stall_count: u32,
-}
+use crate::types::ScoreRecord;
 
 pub fn run_test(config: &SimulationConfig) -> ScoreRecord {
     let metrics = run_simulation(config);
