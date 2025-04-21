@@ -271,6 +271,7 @@ dependencies = [
  "csv",
  "qoe_core",
  "serde",
+ "serde_json",
 ]
 
 [[package]]

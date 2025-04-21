@@ -5,7 +5,7 @@ use qoe_core::{
     metrics::qoe::evaluate_qoe,
 };
 
-#[derive(Serialize)]
+#[derive(Serialize, Clone, Debug)]
 pub struct ScoreRecord {
     pub abr: String,
     pub score: f32,
